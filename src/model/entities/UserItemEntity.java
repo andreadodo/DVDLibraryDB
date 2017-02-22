@@ -1,4 +1,4 @@
-package entities;
+package model.entities;
 
 import javax.persistence.*;
 
@@ -6,13 +6,28 @@ import javax.persistence.*;
  * Created by andrea on 20/02/17.
  */
 @Entity
-@Table(name = "UserItem", schema = "DVDCollection", catalog = "")
+@Table(name = "UserItem", schema = "DVDCollection")
 public class UserItemEntity {
     private int id;
     private String username;
     private String password;
     private int type;
-    private byte state;
+    private boolean state;
+
+    public UserItemEntity(String username, String password, int type, boolean state) {
+        this.username = username;
+        this.password = password;
+        this.type = type;
+        this.state = state;
+    }
+
+    public UserItemEntity(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public UserItemEntity() {
+    }
 
     @Id
     @Column(name = "id", nullable = false)
@@ -56,11 +71,11 @@ public class UserItemEntity {
 
     @Basic
     @Column(name = "state", nullable = false)
-    public byte getState() {
+    public boolean getState() {
         return state;
     }
 
-    public void setState(byte state) {
+    public void setState(boolean state) {
         this.state = state;
     }
 
@@ -71,22 +86,14 @@ public class UserItemEntity {
 
         UserItemEntity that = (UserItemEntity) o;
 
-        if (id != that.id) return false;
-        if (type != that.type) return false;
-        if (state != that.state) return false;
-        if (username != null ? !username.equals(that.username) : that.username != null) return false;
-        if (password != null ? !password.equals(that.password) : that.password != null) return false;
-
-        return true;
+        if (!username.equals(that.username)) return false;
+        return password.equals(that.password);
     }
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + type;
-        result = 31 * result + (int) state;
+        int result = username.hashCode();
+        result = 31 * result + password.hashCode();
         return result;
     }
 }

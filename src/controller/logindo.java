@@ -1,7 +1,9 @@
 package controller;
 
-import model.UserDatabase;
-import model.UserItem;
+import model.entities.UserItemEntity;
+import model.other.UserDatabase;
+import model.other.UserItem;
+import model.service.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -43,18 +45,13 @@ public class logindo extends HttpServlet {
             }
 
             //Perform business logic
-            UserDatabase userDb = UserDatabase.getUserDb();
             HttpSession session;
 
-            if(userDb.loginUser(new UserItem(user,password))) { //false == error usr/psw
+            if(UserService.getInstance().loginUser(new UserItemEntity(user, password))) { //false == error usr/psw
                 //open homepage view
 
                 session = request.getSession();
                 session.setAttribute("user", user);
-
-                //request.setAttribute("user", user);
-
-
 
                 RequestDispatcher view = request.getRequestDispatcher("homepage.view");
                 view.forward(request, response);

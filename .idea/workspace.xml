@@ -2,71 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f02c84a-02d5-417f-a58d-c569e830559a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_40_bin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/service/DVDService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/service/UserService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/3e3629c5-402a-47d7-b937-8b3b19ab37d7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/84402a42-7d58-4532-9145-b9272f35a198.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/entities/DvdItemEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/entities/DvdItemEntity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/entities/UserItemEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/entities/UserItemEntity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/model/DVDCollection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/model/DVDItem$DVDGenreComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/model/DVDItem$DVDYearComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/model/DVDItem.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/model/UserDatabase.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/model/UserItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/entities/DvdItemEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/entities/DvdItemEntity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/entities/UserItemEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/entities/UserItemEntity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/model/DVDCollection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/model/DVDItem$DVDGenreComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/model/DVDItem$DVDYearComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/model/DVDItem.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/model/UserDatabase.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/model/UserItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/DvdItemEntity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/UserItemEntity.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/entities/DvdItemEntity.java" afterPath="$PROJECT_DIR$/src/model/entities/DvdItemEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/entities/UserItemEntity.java" afterPath="$PROJECT_DIR$/src/model/entities/UserItemEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/DVDCollection.java" afterPath="$PROJECT_DIR$/src/model/other/DVDCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/DVDItem.java" afterPath="$PROJECT_DIR$/src/model/other/DVDItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/UserDatabase.java" afterPath="$PROJECT_DIR$/src/model/other/UserDatabase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/UserItem.java" afterPath="$PROJECT_DIR$/src/model/other/UserItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/controller/delDvddo.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/controller/delDvddo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/controller/editDvddo.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/controller/editDvddo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/controller/logindo.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/controller/logindo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/Successview.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/Successview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/formDvdview.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/formDvdview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/homepageview.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/homepageview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/listLibraryview.class" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/view/listLibraryview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/controller/delDvddo.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/controller/delDvddo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/controller/editDvddo.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/controller/editDvddo.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/UserItemEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/UserDatabase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/UserItem.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/controller/logindo.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/controller/logindo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/Successview.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/Successview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/formDvdview.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/formDvdview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/homepageview.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/homepageview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/listLibraryview.class" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/view/listLibraryview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/DVDLibraryDBHibernate_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/DVDLibraryDBHibernate_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DVDLibraryDBHibernate.iml" afterPath="$PROJECT_DIR$/DVDLibraryDBHibernate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/artifacts/DVDLibraryDBHibernate_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/production/DVDLibraryDBHibernate/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/delDvddo.java" afterPath="$PROJECT_DIR$/src/controller/delDvddo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/editDvddo.java" afterPath="$PROJECT_DIR$/src/controller/editDvddo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/logindo.java" afterPath="$PROJECT_DIR$/src/controller/logindo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/Successview.java" afterPath="$PROJECT_DIR$/src/view/Successview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/formDvdview.java" afterPath="$PROJECT_DIR$/src/view/formDvdview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/homepageview.java" afterPath="$PROJECT_DIR$/src/view/homepageview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/listLibraryview.java" afterPath="$PROJECT_DIR$/src/view/listLibraryview.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,11 +91,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DVDService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/service/DVDService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="85" column="92" lean-forward="false" selection-start-line="85" selection-start-column="92" selection-end-line="85" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#editDvd#0;class#DVDService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="26" column="84" lean-forward="false" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,15 +116,40 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserItemEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/entities/UserItemEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="765">
+              <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
               <folding>
                 <element signature="method#UserItemEntity#0;class#UserItemEntity#0" expanded="false" />
                 <element signature="method#UserItemEntity#1;class#UserItemEntity#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DVDCollection.UserItem" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/87d0ff6e/509ffb42-951e-428b-a73e-a0d004f68e2d/DVDCollection.UserItem">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -212,10 +194,10 @@
         <option value="$PROJECT_DIR$/src/controller/logindo.java" />
         <option value="dbtable:/87d0ff6e/509ffb42-951e-428b-a73e-a0d004f68e2d/DVDCollection.UserItem" />
         <option value="$PROJECT_DIR$/src/model/service/DVDService.java" />
-        <option value="$PROJECT_DIR$/src/model/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/UserItemEntity.java" />
         <option value="dbtable:/87d0ff6e/ed5f24d9-4369-4bcc-a99d-70790911401c/DVDCollection.UserItem" />
         <option value="dbtable:/87d0ff6e/ed5f24d9-4369-4bcc-a99d-70790911401c/DVDCollection.DVDItem" />
+        <option value="$PROJECT_DIR$/src/model/entities/UserItemEntity.java" />
+        <option value="$PROJECT_DIR$/src/model/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -966,12 +948,12 @@
       <workItem from="1487603042520" duration="720000" />
       <workItem from="1487603766996" duration="68000" />
       <workItem from="1487604044511" duration="1631000" />
-      <workItem from="1487751195198" duration="10302000" />
+      <workItem from="1487751195198" duration="11047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28395000" />
+    <option name="totallyTimeSpent" value="29140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
@@ -985,7 +967,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29971388" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29971388" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -996,7 +978,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5725916" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5725916" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26037195" sideWeight="0.5342742" order="6" side_tool="true" content_ui="tabs" />
@@ -1296,14 +1278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/formDvdview.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1381,30 +1355,6 @@
         <state relative-caret-position="30">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/service/DVDService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="85" column="92" lean-forward="false" selection-start-line="85" selection-start-column="92" selection-end-line="85" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#editDvd#0;class#DVDService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/87d0ff6e/509ffb42-951e-428b-a73e-a0d004f68e2d/DVDCollection.UserItem">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1493,10 +1443,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/service/DVDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="85" column="92" lean-forward="false" selection-start-line="85" selection-start-column="92" selection-end-line="85" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#editDvd#0;class#DVDService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/87d0ff6e/509ffb42-951e-428b-a73e-a0d004f68e2d/DVDCollection.UserItem">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/entities/UserItemEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="765">
+          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
           <folding>
             <element signature="method#UserItemEntity#0;class#UserItemEntity#0" expanded="false" />
             <element signature="method#UserItemEntity#1;class#UserItemEntity#0" expanded="false" />
@@ -1506,8 +1488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="26" column="84" lean-forward="false" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

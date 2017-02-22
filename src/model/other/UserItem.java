@@ -1,4 +1,4 @@
-package model;
+package model.other;
 
 /**
  * Created by andrea on 14/02/17.
