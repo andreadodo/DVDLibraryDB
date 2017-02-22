@@ -1,7 +1,7 @@
 package view;
 
 
-import model.DVDItem;
+import model.other.DVDItem;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,7 +19,7 @@ public class Successview extends HttpServlet {
             throws ServletException, IOException {
 
         //Retrieve the dvd from request-scope
-        DVDItem dvd = (DVDItem) request.getAttribute("dvd");
+        String title = request.getAttribute("title").toString();
 
         //Specify the content type HTML
         response.setContentType("text/html;charset=UTF-8");
@@ -32,7 +32,7 @@ public class Successview extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<p>Your request to add the ");
-            out.println("<i>" + dvd.getDvdTitle() + "</i>");
+            out.println("<i>" + title + "</i>");
             out.println(" dvd was succesful.</p>");
             out.println("<br><br>");
             out.println("<form action=homepage.view method='POST'>"

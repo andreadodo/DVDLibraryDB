@@ -1,8 +1,10 @@
 package controller;
 
 
-import model.DVDCollection;
-import model.DVDItem;
+import model.entities.DvdItemEntity;
+import model.other.DVDCollection;
+import model.other.DVDItem;
+import model.service.DVDService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -67,32 +69,30 @@ public class editDvddo extends HttpServlet {
                     return;
                 }
 
-                //Perform business logic
-                DVDCollection dvdLibrary = DVDCollection.getDvdCollection();
-                DVDItem dvd = null;
 
+                 //Perform business logic
+
+                //ADD DVD
                 if (id == 0) {// 0 == nn assegnato
-                    id = dvdLibrary.getLastId() + 1;
-                    dvd = new DVDItem(id, title, year, genre);
-                    if (dvdLibrary.addDvd(dvd)) { //true == errore already exist
+                    if (DVDService.getInstance().addDvd(new DvdItemEntity(title,genre,year))) { //true == errore already exist
                         errorMsgs.add("The DVD already exist");
                         request.setAttribute("errors", errorMsgs);
                         RequestDispatcher view = request.getRequestDispatcher("Error.view");
                         view.forward(request, response);
                         return;
                     }
-                } else {
-                    dvd = new DVDItem(id, title, year, genre);
-                    dvdLibrary.editDvd(dvd);
                 }
 
+                //EDIT DVD
+                else {
+                    DVDService.getInstance().editDvd(new DvdItemEntity(id,title,genre,year));
+                }
 
                 //open succes view
-                request.setAttribute("dvd", dvd);
+                request.setAttribute("title", title);
                 RequestDispatcher view = request.getRequestDispatcher("Success.view");
                 view.forward(request, response);
                 return;
-
 
             //Handle any unexpected exceptions
         } catch (RuntimeException re) {

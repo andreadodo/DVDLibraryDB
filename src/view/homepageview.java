@@ -1,7 +1,7 @@
 package view;
 
-import model.UserDatabase;
-import model.UserItem;
+import model.other.UserDatabase;
+import model.other.UserItem;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

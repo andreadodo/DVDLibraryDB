@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="DVDLibraryDBHibernate" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JPA 2.0-2.0" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/javax.persistence.jar" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.40-bin" />
+        </element>
       </element>
     </root>
   </artifact>

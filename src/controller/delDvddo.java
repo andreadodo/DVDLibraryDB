@@ -1,6 +1,8 @@
 package controller;
 
-import model.DVDCollection;
+import model.entities.DvdItemEntity;
+import model.other.DVDCollection;
+import model.service.DVDService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -42,14 +44,20 @@ public class delDvddo extends HttpServlet {
             }
 
             //Perform business logic
-            DVDCollection dvdLibrary = DVDCollection.getDvdCollection();
-            dvdLibrary.delDvd(id);
+            try {
+                DVDService.getInstance().delDvd(id);
+            } catch (Exception e) {
+                errorMsgs.add("Not Delected: " + e.getMessage());
+                request.setAttribute("errors", errorMsgs);
+                RequestDispatcher view = request.getRequestDispatcher("Error.view");
+                view.forward(request, response);
+                return;
+            }
 
             //open succes view
-            request.setAttribute("id", id);
-            RequestDispatcher view = request.getRequestDispatcher("list_library.view");
+            RequestDispatcher view = request.getRequestDispatcher("listLibrary.view");
             view.forward(request, response);
-            return;
+
 
             //Handle any unexpected exceptions
         } catch (RuntimeException re) {

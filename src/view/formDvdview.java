@@ -1,9 +1,11 @@
 package view;
 
-import model.DVDCollection;
-import model.DVDItem;
-import model.UserDatabase;
-import model.UserItem;
+import model.entities.DvdItemEntity;
+import model.other.DVDCollection;
+import model.other.DVDItem;
+import model.other.UserDatabase;
+import model.other.UserItem;
+import model.service.DVDService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,8 +43,9 @@ public class formDvdview extends HttpServlet {
                 } catch (NumberFormatException nfe) {
                 }
 
-                DVDCollection dvdLibrary = DVDCollection.getDvdCollection();
-                DVDItem dvd = dvdLibrary.getDvd(id);
+                DvdItemEntity dvd = DVDService.getInstance().getDvd(id);
+
+
 
                 out.println("<!DOCTYPE html>");
                 out.println("<html>");
@@ -53,36 +56,36 @@ public class formDvdview extends HttpServlet {
                 out.println("<form action='editDvd.do' method='POST'>");
 
                 if (idStr != null) { //if id is defined edit else add
-                    out.println("<input type='hidden' name='id' value='" + dvd.getDvdId() + "'>");
+                    out.println("<input type='hidden' name='id' value='" + dvd.getId() + "'>");
                     out.println("Title:<br>");
-                    out.println("<input type='text' name='title' value='" + dvd.getDvdTitle() + "'>");
+                    out.println("<input type='text' name='title' value='" + dvd.getTitle() + "'>");
                     out.println("<br><br>Year:<br>");
-                    out.println("<input type='text' name='year' value='" + dvd.getDvdYear() + "'>");
+                    out.println("<input type='text' name='year' value='" + dvd.getYear() + "'>");
                     out.println("<br><br>Genre:<br>");
                     out.println("<select name='genre'>");
                     out.println("<option value ='Sci-Fi' ");
-                    if (dvd.getDvdGenre().equals("Sci-Fi"))
+                    if (dvd.getGenre().equals("Sci-Fi"))
                         out.println("selected");
                     out.println(">Sci-Fi</option>");
                     out.println("<option value ='Cartoon' ");
-                    if (dvd.getDvdGenre().equals("Cartoon"))
+                    if (dvd.getGenre().equals("Cartoon"))
                         out.println("selected");
                     out.println(">Cartoon</option>");
                     out.println("<option value ='Drammatics' ");
-                    if (dvd.getDvdGenre().equals("Dramatics"))
+                    if (dvd.getGenre().equals("Dramatics"))
                         out.println("selected");
                     out.println(">Dramatics</option>");
                     out.println("</select>");
 
                 } else {
                     out.println("Title:<br>");
-                    out.println("<input type='text' name='title' value='insert Title'>");
+                    out.println("<input type='text' name='title' value='superman'>");
                     out.println("<br><br>Year:<br>");
-                    out.println("<input type='text' name='year' value='insert Year'>");
+                    out.println("<input type='text' name='year' value='2000'>");
                     out.println("<br><br>Genre:<br>");
                     out.println("<select name='genre'>");
                     out.println("<option value ='UNKNOW'>select...</option>");
-                    out.println("<option value ='Sci-Fi'>Sci-Fi</option>");
+                    out.println("<option value ='Sci-Fi' selected>Sci-Fi</option>");
                     out.println("<option value ='Cartoon'>Cartoon</option>");
                     out.println("<option value ='Dramatics'>Dramatics</option>");
                     out.println("</select>");

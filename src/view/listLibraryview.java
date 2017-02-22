@@ -1,7 +1,9 @@
 package view;
 
-import model.DVDCollection;
-import model.DVDItem;
+import model.entities.DvdItemEntity;
+import model.other.DVDCollection;
+import model.other.DVDItem;
+import model.service.DVDService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -22,8 +24,7 @@ public class listLibraryview extends HttpServlet {
 
         response.setContentType("text/html;charset=UTF-8");
 
-        DVDCollection dvdLibrary = DVDCollection.getDvdCollection();
-        List<DVDItem> dvdOrderedLibrary = (List<DVDItem>) dvdLibrary.getLibrary();
+        List<DvdItemEntity> dvdOrderedLibrary = DVDService.getInstance().getAllDvd();
 
         //SAVE ORDER PREFERENCE WITH COOKIES
         Cookie[] cookiesBox = request.getCookies();
@@ -49,16 +50,16 @@ public class listLibraryview extends HttpServlet {
                 Collections.sort(dvdOrderedLibrary, Collections.reverseOrder());
                 break;
             case "YearAsc":
-                Collections.sort(dvdOrderedLibrary, new DVDItem.DVDYearComparator());
+                Collections.sort(dvdOrderedLibrary, new DvdItemEntity.DVDYearComparator());
                 break;
             case "YearDesc":
-                Collections.sort(dvdOrderedLibrary, Collections.reverseOrder(new DVDItem.DVDYearComparator()));
+                Collections.sort(dvdOrderedLibrary, Collections.reverseOrder(new DvdItemEntity.DVDYearComparator()));
                 break;
             case "GenreAsc":
-                Collections.sort(dvdOrderedLibrary, new DVDItem.DVDGenreComparator());
+                Collections.sort(dvdOrderedLibrary, new DvdItemEntity.DVDGenreComparator());
                 break;
             case "GenreDesc":
-                Collections.sort(dvdOrderedLibrary, Collections.reverseOrder(new DVDItem.DVDGenreComparator()));
+                Collections.sort(dvdOrderedLibrary, Collections.reverseOrder(new DvdItemEntity.DVDGenreComparator()));
                 break;
         }
         try (PrintWriter out = response.getWriter()) {
@@ -82,9 +83,9 @@ public class listLibraryview extends HttpServlet {
             out.println("</style>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<p>You have " + dvdLibrary.getLibrary().size() + " DVD in your collection.</p>");
+            out.println("<p>You have " + dvdOrderedLibrary.size() + " DVD in your collection.</p>");
 
-            if (!dvdLibrary.getLibrary().isEmpty()) {
+            if (!dvdOrderedLibrary.isEmpty()) {
                 out.println("<form action=listLibrary.view method='POST'>");
                 out.println("Order by: ");
                 out.println("<select name='order'>");
@@ -123,19 +124,19 @@ public class listLibraryview extends HttpServlet {
                 out.println("<table>");
 
                 out.println("<tr><td>ID<td>TITLE</td><td>YEAR</td><td>GENRE</td><td>EDIT</td><td>DELETE</td></tr>");
-                for (DVDItem dvd : dvdOrderedLibrary) {
+                for (DvdItemEntity dvd : dvdOrderedLibrary) {
                     out.println("<tr>");
-                    out.println("<td>" + dvd.getDvdId() + "</td>"); //test id
-                    out.println("<td>" + dvd.getDvdTitle() + "</td>");
-                    out.println("<td>" + dvd.getDvdYear() + "</td>");
-                    out.println("<td>" + dvd.getDvdGenre() + "</td>");
+                    out.println("<td>" + dvd.getId() + "</td>"); //test id
+                    out.println("<td>" + dvd.getTitle() + "</td>");
+                    out.println("<td>" + dvd.getYear() + "</td>");
+                    out.println("<td>" + dvd.getGenre() + "</td>");
 
                     out.println("<td><form action=formDvd.view method='POST'>"
-                            + "<input name='id' value='" + dvd.getDvdId() + "' type='hidden'>"
+                            + "<input name='id' value='" + dvd.getId() + "' type='hidden'>"
                             + "<input type='submit' value='edit'> </form></td>");
 
                     out.println("<td><form action=delDvd.do method='POST'>"
-                            + "<input name='id' value='" + dvd.getDvdId() + "' type='hidden'>"
+                            + "<input name='id' value='" + dvd.getId() + "' type='hidden'>"
                             + "<input type='submit' value='delete'> </form></td>");
                     out.println("</tr>");
                 }
